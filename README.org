@@ -7,4 +7,12 @@ Compatibility layer with the environ library by James Reeves.
 Then *environ* library ships with a Leiningen plugin that will write an environment map specified in *project.clj* to disk. Typically, this file is git ignored and used during development time. In production, you’ll likely environment variables set in the shell or java properties. Those are also supported by the *environ* library. 
 This boot task will simply write to disk the environment map specified in a build pipeline or on the command line, allowing you to leverage environ in the same way as with Leiningen.
 
+** Installation
+
+#+BEGIN_SRC clojure 
+(set-env! :dependencies ‘[[danielsz/boot-environ "0.0.1"]])
+#+END_SRC
+** Usage
+
 Please refer to [[https://github.com/danielsz/system/tree/master/examples/boot][system]] for usage example.
+
