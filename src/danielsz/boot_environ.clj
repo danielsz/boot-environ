@@ -9,5 +9,6 @@
 
 (core/deftask environ [e env FOO=BAR {kw edn} "The environment map"]
   (core/with-pre-wrap fileset
+    (boot.util/info (str "environment " env "\n"))
     (alter-var-root #'environ.core/env merge env)
     fileset))
