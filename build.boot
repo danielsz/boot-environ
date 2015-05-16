@@ -1,12 +1,11 @@
 (set-env!
   :source-paths #{"src"}
   :dependencies '[[boot/core "2.0.0-rc13" :scope "provided"]
-                  [adzerk/bootlaces "0.1.11" :scope "test"]
-                  [environ "1.0.0"]])
+                  [adzerk/bootlaces "0.1.11" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all])
 
-(def +version+ "0.0.2")
+(def +version+ "0.0.3")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,5 +18,5 @@
 (deftask build
   "Build jar and install to local repo."
   []
-  (comp (aot) (pom) (jar) (install)))
+  (comp (pom) (jar) (install)))
 

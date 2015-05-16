@@ -1,0 +1,9 @@
+* Changes
+** 0.0.3
+- Removed dependency on environ library, since user is meant to require it.
+- no aot necessary when building jar.
+- README updated
+** 0.0.2
+- No roundtrip to the filesystem necessary. Updates env map directly. Courtesy of flyingmachine (Daniel Higginbotham).
+** 0.0.1
+- Initial release
