@@ -6,7 +6,7 @@ Compatibility layer with the [[https://github.com/weavejester/environ][environ]]
 
 The ~environ~ library ships with a Leiningen plugin that will write an environment map specified in ~project.clj~ to disk. Typically, this file is git ignored so that your passwords stay safe. In Boot, the round-trip via the filesystem is not necessary. Since there is only one single JVM instance, we can update the map directly in the ~#’environ.core~ namespace. With the net result of being able to leverage ~environ~ in the same way as with Leiningen.
 
-In production, you’ll likely environment variables set in the shell or java properties. Those are also supported by the ~environ~ library. Another option is to use [[https://github.com/danielsz/boot-runit][boot-runit]] in your deployment strategy.
+In production, you’ll likely use environment variables, set in the shell or defined as java properties. Those are also supported by the ~environ~ library. Another option is to use [[https://github.com/danielsz/boot-runit][boot-runit]] in your deployment strategy.
 
 ** Installation
 
