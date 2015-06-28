@@ -11,7 +11,7 @@ In production, you’ll likely use environment variables, set in the shell or de
 ** Installation
 
 #+BEGIN_SRC clojure 
-(set-env! :dependencies ‘[[danielsz/boot-environ "0.0.3"]])
+(set-env! :dependencies ‘[[danielsz/boot-environ "0.0.4"]])
 #+END_SRC
 ** Usage
 
