@@ -11,10 +11,18 @@ In production, you’ll likely use environment variables, set in the shell or de
 ** Installation
 
 #+BEGIN_SRC clojure 
-(set-env! :dependencies ‘[[danielsz/boot-environ "0.0.4"]])
+(set-env! :dependencies ‘[[danielsz/boot-environ "0.0.5"]])
 #+END_SRC
 ** Usage
 
+#+BEGIN_SRC clojure
+(comp
+ ...
+ (environ :env {:http-port 3000} :verbose true)
+ ...
+ )
+#+END_SRC
 As with any boot task, the environment map can be specified in a build pipeline or at the command line. 
 Please refer to [[https://github.com/danielsz/system/tree/master/examples/boot][system]] or [[https://github.com/danielsz/holygrail][holygrail]] for usage examples.
+
 
