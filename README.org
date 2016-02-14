@@ -1,5 +1,7 @@
 * Boot environ
 
+*DEPRECATED* This functionality has been merged into https://github.com/weavejester/environ
+
 ** What is it?
 
 Compatibility layer with the [[https://github.com/weavejester/environ][environ]] library by James Reeves.
